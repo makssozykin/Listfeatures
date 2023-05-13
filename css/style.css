@@ -9,8 +9,8 @@ body {
   height: 100px;
 }
 .btn {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-color: tomato;
   border: 1px solid tomato;
   box-shadow: inset rgb(255, 99, 71, 0.25);
@@ -19,7 +19,8 @@ body {
   transition: opacity 250ms ease-in-out;
 }
 .btn:hover,
-.btn:focus {
+.btn:focus,
+.btn:active {
   background-color: blanchedalmond;
 }
 .btn--hamberger {
@@ -47,11 +48,11 @@ body {
   height: 5px;
   background-color: black;
   border-radius: 5px;
-  transition: transform 1000ms ease-in;
+  transition: transform 2000ms ease-in-out;
 }
-.btn:active .hamburger::before {
-  top: 47%;
-  left: 15%;
+.btn:hover .hamburger::before {
+  bottom: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
   transform: scale(0.5);
   transform: rotate(225deg);
@@ -67,15 +68,15 @@ body {
   height: 5px;
   background-color: black;
   border-radius: 5px;
-  transition: transform 1000ms ease-in;
+  transition: transform 2000ms ease-in-out;
 }
-.btn:active .hamburger::after {
-  bottom: 47%;
-  left: 15%;
-  transform: translateY(-50%, -50%);
+.btn:hover .hamburger::after {
+  bottom: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   transform: scale(0.5);
   transform: rotate(-225deg);
 }
-.btn:active .hamburger__bar {
+.btn:hover .hamburger__bar {
   opacity: 0;
 }
