@@ -52,14 +52,15 @@ body {
   color: #ffffff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
-.step-container {
+.step-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
 }
 .step-item {
   width: 389px;
+  height: 128px;
   padding: 40px 20px;
   background: #ffffff;
   border-radius: 20px;
@@ -72,21 +73,14 @@ body {
   align-items: center;
 }
 .step-btn {
-  width: 136px;
-  height: 48px;
-  border-radius: 200px;
-}
-.step {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: -0.04em;
-  color: #ffffff;
+  padding: 15px 0;
+  gap: 10px;
+  width: 136px;
+  height: 48px;
+  border-radius: 200px;
 }
 .first {
   background: #ae1332;
@@ -96,6 +90,15 @@ body {
 }
 .third {
   background: #f5ce13;
+}
+.step {
+  margin: 0 auto;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
 }
 .step-text {
   margin: 0;
@@ -109,4 +112,15 @@ body {
   letter-spacing: -0.04em;
   color: #000000;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.step-item:nth-child(1) .step-text,
+.step-item:nth-child(2) .step-text {
+  margin-right: 33px;
+}
+.step-img {
+  display: block;
+  margin: 0 auto;
+  width: 860px;
+  height: 476px;
+  border-radius: 20px;
 }

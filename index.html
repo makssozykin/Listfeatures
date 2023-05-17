@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Normalize styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Listfeatures</title>
   </head>
   <body>
@@ -12,19 +23,21 @@
     <main>
       <section class="order">
         <div class="container">
-          <h3 class="title-h-one">
+          <h2 class="title-h-one">
             To order your fruit basket, simply follow these easy steps
-          </h3>
+          </h2>
           <p class="desc">
             Our baskets are assembled with care and delivered straight to your
             doorstep, so you can enjoy the taste of fresh fruit without ever
             leaving your home. Whether you're looking for a healthy snack or a
             thoughtful gift, our fruit baskets are the perfect choice.
           </p>
-          <ul class="step-container list">
+          <ul class="step-list list">
             <li class="step-item">
               <div class="step-box">
-                <p class="step first">FIrst Step</p>
+                <div class="step-btn first">
+                  <span class="step">FIrst Step</span>
+                </div>
                 <p class="step-text">
                   Just choose the fruit you want to order by clicking on the
                   checkboxes next to it.
@@ -33,7 +46,9 @@
             </li>
             <li class="step-item">
               <div class="step-box">
-                <p class="step second">Second Step</p>
+                <div class="step-btn second">
+                  <span class="step">Second Step</span>
+                </div>
                 <p class="step-text">
                   Click on the basket and fill out the form.
                 </p>
@@ -41,13 +56,22 @@
             </li>
             <li class="step-item">
               <div class="step-box">
-                <div class="step-btn third"><p class="step">Third Step</p></div>
+                <div class="step-btn third">
+                  <span class="step">Third Step</span>
+                </div>
                 <p class="step-text">
                   Sit back and relax! Your fresh fruit basket will be delivered.
                 </p>
               </div>
             </li>
           </ul>
+          <div class="step-box-img">
+            <img
+              class="step-img"
+              src="./images/Fresh Harvest Box.gif"
+              alt="Fresh_Harvest"
+            />
+          </div>
         </div>
       </section>
     </main>
