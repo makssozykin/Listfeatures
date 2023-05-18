@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ae1332;
   margin: 0;
@@ -61,26 +64,33 @@ body {
 .step-item {
   width: 389px;
   height: 128px;
+  /* display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center; */
   padding: 40px 20px;
   background: #ffffff;
   border-radius: 20px;
 }
 .step-box {
-  width: 349px;
   display: flex;
   gap: 14px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .step-btn {
+  position: relative;
+  width: 136px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px 42px;
   gap: 10px;
-  width: 136px;
-  height: 48px;
   border-radius: 200px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .first {
   background: #ae1332;
@@ -92,8 +102,12 @@ body {
   background: #f5ce13;
 }
 .step {
-  margin: 0 auto;
-  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "DM Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
