@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"path": "../../goit-markup-hw-06"
+	},
+	{
+		"path": "../../Tutorial"
+	},
+	{
+		"path": "../../goit-markup-hw-07"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Listfeatures"
+  }
+}
